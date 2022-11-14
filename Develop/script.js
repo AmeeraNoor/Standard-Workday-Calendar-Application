@@ -3,7 +3,7 @@ $(function () {
  
   var now = dayjs()
   var currentDay = document.getElementById('currentDay')
-  currentDay.innerHTML = now.format('dddd DD/MM/YYYY h:mmA')
+  currentDay.innerHTML = now.format('dddd MM/DD/YYYY h:mmA')
 
   var timeslots = document.getElementById('timeslots').querySelectorAll('.row')
 
