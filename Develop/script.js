@@ -3,7 +3,7 @@ $(function () {
  
   var now = dayjs()
   var currentDay = document.getElementById('currentDay')
-  currentDay.innerHTML = now.format('dddd MM/DD/YYYY h:mmA')
+  currentDay.innerHTML = now.format('dddd MM/DD/YYYY HH:mmA')
 
   var timeslots = document.getElementById('timeslots').querySelectorAll('.row')
 
@@ -21,9 +21,9 @@ $(function () {
     if (currentHour - taskHour == 0) {
       document.getElementById(taskId).classList.add('present')
     } else if (currentHour - taskHour > 0) {
-      document.getElementById(taskId).classList.add('future')
-    } else if (currentHour - taskHour < 0) {
       document.getElementById(taskId).classList.add('past')
+    } else if (currentHour - taskHour < 0) {
+      document.getElementById(taskId).classList.add('future')
     }
   }
   function saveEvent(e) {
