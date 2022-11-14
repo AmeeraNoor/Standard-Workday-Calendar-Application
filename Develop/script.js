@@ -26,4 +26,9 @@ $(function () {
       document.getElementById(taskId).classList.add('past')
     }
   }
+  function saveEvent(e) {
+    var taskId = e.target.closest(".row").id
+    var taskContent = document.getElementById(taskId).querySelector('textarea').value
+    localStorage.setItem(taskId, JSON.stringify(taskContent))
+  }
 });
