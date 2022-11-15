@@ -1,8 +1,8 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
 ## Repository Links
-* Deployed URL:
-* Github URL:
+* Deployed URL: https://ameeranoor.github.io/lovely-calendar-assignment/
+* Github URL: https://github.com/AmeeraNoor/lovely-calendar-assignment.git
 
 ## User Story
 
@@ -26,4 +26,5 @@
 * WHEN I refresh the page
 * THEN the saved events persist
 
+## Screenshots
 
